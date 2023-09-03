@@ -3,6 +3,7 @@ package com.zhuang.docker.controller;
 import cn.hutool.core.util.IdUtil;
 import com.zhuang.docker.entity.UserDTO;
 import com.zhuang.docker.service.UserService;
+import com.zhuang.docker.service.impl.UserServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +25,7 @@ import java.util.Random;
 @Slf4j
 public class UserController {
     @Resource
-    private UserService userService;
+    private UserServiceImpl userService;
 
     @ApiOperation("数据库新增3条记录")
     @RequestMapping(value = "/user/add", method = RequestMethod.POST)

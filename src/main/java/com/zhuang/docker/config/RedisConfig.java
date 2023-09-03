@@ -20,7 +20,6 @@ import java.io.Serializable;
 @Slf4j
 public class RedisConfig {
     /**
-     * @param lettuceConnectionFactory
      * @return redis序列化的工具配置类，下面这个请一定开启配置
      * 127.0.0.1:6379> keys *
      * 1) "ord:102"  序列化过
